@@ -1,0 +1,77 @@
+{    "customers": [
+      {
+        "customer_id": "C001",
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@example.com",
+        "phone": "+1234567890",
+        "direct_debits": {
+          "DD001": {
+            "amount": 200.00,
+            "frequency": "Monthly",
+            "recipient": "Internet Service Provider",
+            "status": "Active",
+            "payment_date": "2024-09-10",
+            "account_number": "987654321012"
+          },
+          "DD002": {
+            "amount": 200.00,
+            "frequency": "Monthly",
+            "recipient": "Internet Service Provider",
+            "status": "Active",
+            "payment_date": "2024-10-10",
+            "account_number": "987654321012"
+          },
+          "DD003": {
+            "amount": 200.00,
+            "frequency": "Monthly",
+            "recipient": "Internet Service Provider",
+            "status": "Active",
+            "payment_date": "2024-11-10",
+            "account_number": "987654321012"
+          },
+          "DD004": {
+            "amount": 200.00,
+            "frequency": "Monthly",
+            "recipient": "Internet Service Provider",
+            "status": "Active",
+            "payment_date": "2024-12-10",
+            "account_number": "987654321012"
+          }
+        }
+      },
+      {
+        "customer_id": "C002",
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "email": "jane.smith@example.com",
+        "phone": "+0987654321",
+        "direct_debits": {
+          "DD001": {
+            "amount": 190.00,
+            "frequency": "Monthly",
+            "recipient": "Spotify Subscription",
+            "status": "Active",
+            "payment_date": "2024-12-10",
+            "account_number": "987654321012"
+          },
+          "DD002": {
+            "amount": 200.00,
+            "frequency": "Monthly",
+            "recipient": "Spotify Subscription",
+            "status": "Active",
+            "payment_date": "2025-01-10",
+            "account_number": "987654321012"
+          },
+          "DD003": {
+            "amount": 200.00,
+            "frequency": "Monthly",
+            "recipient": "Spotify Subscription",
+            "status": "Active",
+            "payment_date": "2025-02-10",
+            "account_number": "987654321012"
+          }
+        }
+      }
+    ]
+}
