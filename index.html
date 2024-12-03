@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Banking - Impulse Control</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Mobile Banking - Impulse Control</h1>
+        <div class="what-are-you-buying-section" id="whatAreYouBuyingSection">
+            <h2>What Are You Buying?</h2>
+            <form id="whatAreYouBuyingForm">
+                <div>
+                    <label for="item">Item Description:</label>
+                    <input type="text" id="item" name="item" required>
+                </div>
+                <div>
+                    <label for="amount">Amount to Spend (e.g., 50):</label>
+                    <input type="number" id="amount" name="amount" value="50" required>
+                </div>
+                <button type="submit">Proceed to Transaction</button>
+            </form>
+        </div>
+        <div class="confirmation-section" id="confirmationSection" style="display: none;">
+            <h2>Confirm Your Action</h2>
+            <p id="confirmationMessage"></p>
+            <div>
+                <label for="action">Choose Action:</label>
+                <select id="action" name="action" required>
+                    <option value="">--Select an action--</option>
+                    <option value="wait">Wait for 24 hours</option>
+                    <option value="reinvest">Reinvest into savings</option>
+                    <option value="purchase">Purchase the item</option>
+                </select>
+            </div>
+            <button id="confirmAction">Confirm</button>
+            <button id="cancelAction">Cancel</button>
+        </div>
+        <div class="transaction-history-section" id="transactionHistorySection" style="display: none;">
+            <h2>Transaction History</h2>
+            <div id="transactionHistory"></div>
+            <button id="exportCSV">Export Transactions to CSV</button>
+            <button id="clearCSV">Clear Transactions</button>
+        </div>
+        <div class="visualization-section" id="visualizationSection" style="display: none;">
+            <h2>Spending Visualization</h2>
+            <canvas id="spendingChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
